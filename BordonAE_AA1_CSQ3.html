@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<title> A-E-I LoVE U </title>
+	<body>
+		<script>
+			function numberOfVowels(msg){
+			const vowels = "aeiouAEIOU";
+			let number = 0
+
+			for (let x = 0; x < msg.length; x++) {
+				if (vowels.includes(msg[x])){
+					number++;
+				}
+			}
+			return number;
+			}
+			let text = prompt ("type a message")
+			let equal = numberOfVowels(text);
+			alert(equal);
+		</script>
+	</body>
+</html>
